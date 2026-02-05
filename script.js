@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Observe sections
-    document.querySelectorAll('.services, .clients').forEach(section => {
+    document.querySelectorAll('.reveal').forEach(section => {
         observer.observe(section);
     });
     
