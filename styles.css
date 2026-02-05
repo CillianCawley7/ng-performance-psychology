@@ -262,18 +262,10 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.logo-ng {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 0.3em;
-    margin-bottom: var(--spacing-xs);
-}
-
-.logo-text {
-    font-family: var(--font-heading);
-    font-style: italic;
-    font-size: 1.3rem;
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* About Section */
