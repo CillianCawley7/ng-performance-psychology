@@ -1,0 +1,9 @@
+{
+  "name": "ng-performance-psychology",
+  "version": "1.0.0",
+  "description": "NG Performance Psychology Website",
+  "private": true,
+  "dependencies": {
+    "resend": "^2.0.0"
+  }
+}
