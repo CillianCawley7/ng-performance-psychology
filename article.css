@@ -106,7 +106,7 @@
 /* Divider */
 .article-body .divider {
     height: 4px;
-    background-color: #d4a849;
+    background-color: var(--color-accent);
     margin: var(--spacing-lg) 0;
 }
 
