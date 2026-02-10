@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     };
 
     try {
-        await resend.emails.send({
+        const result = await resend.emails.send({
             from: 'NG Performance Psychology <onboarding@resend.dev>',
             to: 'cilliancawley@gmail.com',
             replyTo: email,
@@ -39,7 +39,8 @@ export default async function handler(req, res) {
             `
         });
 
-        return res.status(200).json({ success: true, message: 'Email sent successfully' });
+        console.log('Resend response:', result);
+        return res.status(200).json({ success: true, message: 'Email sent successfully', id: result?.id });
     } catch (error) {
         console.error('Resend error:', error);
         return res.status(500).json({ error: 'Failed to send email' });
