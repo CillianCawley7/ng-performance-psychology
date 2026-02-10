@@ -546,19 +546,19 @@ h1, h2, h3 {
     object-position: center 15%;
 }
 
-/* Workshop photo - zoom in and center evenly */
-.insight-card:last-child .insight-image img {
-    object-fit: cover;
-    object-position: center center;
-    transform: scale(1.1);
-}
-
 .insight-card:hover .insight-image img {
     transform: scale(1.05);
 }
 
-.insight-card:last-child:hover .insight-image img {
+/* Workshop photo - balance top/bottom whitespace */
+.insight-card:last-child .insight-image img {
+    object-fit: cover;
+    object-position: center 70%;
     transform: scale(1.15);
+}
+
+.insight-card:last-child:hover .insight-image img {
+    transform: scale(1.2);
 }
 
 .insight-title {
