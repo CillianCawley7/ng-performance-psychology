@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function startAutoplay() {
-        autoplayInterval = setInterval(nextSlide, 5000);
+        autoplayInterval = setInterval(nextSlide, 9000);
     }
     
     function stopAutoplay() {
@@ -72,6 +72,24 @@ document.addEventListener('DOMContentLoaded', function() {
             startAutoplay();
         });
     });
+
+    // Arrow click handlers
+    const prevArrow = document.querySelector('.carousel-arrow.prev');
+    const nextArrow = document.querySelector('.carousel-arrow.next');
+
+    if (prevArrow && nextArrow) {
+        prevArrow.addEventListener('click', () => {
+            stopAutoplay();
+            showSlide(currentSlide - 1);
+            startAutoplay();
+        });
+
+        nextArrow.addEventListener('click', () => {
+            stopAutoplay();
+            showSlide(currentSlide + 1);
+            startAutoplay();
+        });
+    }
     
     // Start autoplay
     if (slides.length > 0) {

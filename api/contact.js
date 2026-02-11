@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     try {
         const result = await resend.emails.send({
             from: 'NG Performance Psychology <onboarding@resend.dev>',
-            to: 'cilliancawley@gmail.com',
+            to: 'neil@ngperformancepsychology.com',
             replyTo: email,
             subject: `New Booking Request: ${serviceNames[service] || service}`,
             html: `
